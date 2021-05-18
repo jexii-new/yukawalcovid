@@ -231,6 +231,7 @@ section.loader {
 
 .coronavirus h4 {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .coronavirus .card-case {
@@ -256,7 +257,7 @@ section.loader {
 }
 
 .coronavirus .card-case h5 {
-  font-size: 18px;
+  font-size: 16px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -347,6 +348,7 @@ section.vaksin #updatetvaksin {
 
 section.vaksin h4 {
   font-size: 18px;
+  font-weight: bold;
 }
 
 section.vaksin .card {
@@ -358,7 +360,7 @@ section.vaksin .card {
 }
 
 section.vaksin h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1;
 }
