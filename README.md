@@ -25,4 +25,9 @@
 
 Ilustration [flaticon.com link](https://www.flaticon.com/packs/virus-227?word=covid)
 
+## API
+
+- Covid API  [apicovid19indonesia-v2.vercel.app ](https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi)
+- Vaksin API [cekdiri.id ](https://cekdiri.id/vaksinasi)
+
 Copyright © 2021 by Mohammad Refaldo
