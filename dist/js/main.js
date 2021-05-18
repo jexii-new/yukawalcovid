@@ -262,10 +262,10 @@ fetch('https://cekdiri.id/vaksinasi/')
     <div class="card  ">
     <div class="card-body  card-case" >
       <h5 class="card-title text-uppercase mb-3">Vaksinasi Lansia Dosis 1</h5>
-        <h3 style="color:#2A9D8F;">${set_titik(coba[panjang].tahapan_vaksinasi.lansia.sudah_vaksin1)} </h3>
+        <h3 style="color:#77acf1;">${set_titik(coba[panjang].tahapan_vaksinasi.lansia.sudah_vaksin1)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
-          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.lansia_vaksinasi1}; background-color:#2A9D8F;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.lansia_vaksinasi1}</div>
+          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.lansia_vaksinasi1}; background-color:#77acf1;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.lansia_vaksinasi1}</div>
         </div>
         <p>${coba[panjang].cakupan.lansia_vaksinasi1} dari ${set_titik(coba[panjang].sasaran_vaksinasi_lansia)}  telah divaksin</p>
       </div>
@@ -275,10 +275,10 @@ fetch('https://cekdiri.id/vaksinasi/')
     <div class="card  ">
     <div class="card-body  card-case" >
       <h5 class="card-title text-uppercase mb-3">Vaksinasi Lansia Dosis 2</h5>
-        <h3 style="color:#2A9D8F;">${set_titik(coba[panjang].tahapan_vaksinasi.lansia.sudah_vaksin2)} </h3>
+        <h3 style="color:#77acf1;">${set_titik(coba[panjang].tahapan_vaksinasi.lansia.sudah_vaksin2)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
-          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.lansia_vaksinasi2}; background-color:#2A9D8F;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.lansia_vaksinasi2}</div>
+          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.lansia_vaksinasi2}; background-color:#77acf1;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.lansia_vaksinasi2}</div>
         </div>
         <p>${coba[panjang].cakupan.lansia_vaksinasi2} dari ${set_titik(coba[panjang].sasaran_vaksinasi_lansia)}  telah divaksin</p>
       </div>
