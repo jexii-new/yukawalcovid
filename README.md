@@ -23,7 +23,7 @@
 
 ## Assets
 
-Ilustration [flaticon.com link](https://www.flaticon.com/packs/virus-227?word=covid)
+Ilustration [flaticon.com](https://www.flaticon.com/packs/virus-227?word=covid)
 
 ## API
 
