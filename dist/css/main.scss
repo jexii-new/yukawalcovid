@@ -8,6 +8,47 @@ body {
 }
 
 
+.progress-container {
+    height: 2px;
+    width: 100%;
+
+
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+}
+
+.progress-load {
+    height: 100%;
+    width: 100%;
+
+    background: #ff4754;
+
+    animation: progress 0.5s ease;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    15% {
+        width: 15%;
+    }
+
+    25% {
+        width: 25%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {

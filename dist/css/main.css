@@ -4,6 +4,58 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
+.progress-container {
+  height: 2px;
+  width: 100%;
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+}
+
+.progress-load {
+  height: 100%;
+  width: 100%;
+  background: #ff4754;
+  -webkit-animation: progress 0.5s ease;
+          animation: progress 0.5s ease;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    width: 0%;
+  }
+  15% {
+    width: 15%;
+  }
+  25% {
+    width: 25%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  15% {
+    width: 15%;
+  }
+  25% {
+    width: 25%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
