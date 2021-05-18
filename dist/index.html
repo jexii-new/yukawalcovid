@@ -69,86 +69,85 @@
         <div class="container">
             <div class="row" id="bg">
                 <div class="col-12 mb-4 judul">
-          <h1 class="big" >Kawal Informasi Covid-19</h1>
-          <p class=" mt-1">Situs ini merupakan kesukarelaan saya dalam mengawal keakuratan data Informasi seputar Covid19.</p>
+          <h1 class="big" >Kawal Informasi Covid-19 <img> </h1>
+          <p class=" mt-1">Situs ini merupakan kesukarelaan saya dalam mengawal keakuratan data Informasi seputar Covid-19.</p>
         </div>
 
         <div class="col-12  mb-3">
             <h4 class="">Jumlah Kasus di Indonesia Saat Ini</h4>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card  ">
                 <div class="card-body  card-case" id="confirmed">
-                 <img src="./img/hightemperature.png" alt="" class="" >
+                 <img src="./img/hightemperature.png" alt="positif" class="" >
                   </div>
               </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card " id="card2">
                 <div class="card-body  card-case" id="recovered">                  
-                 <img src="./img/lowtemperature.png" alt="" class="" >
+                 <img src="./img/lowtemperature.png" alt="sembuh" class="" >
            
 
                 </div>
               </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card " id="card3">
                 <div class="card-body  card-case" id="hospital">
-                 <img src="./img/doctor.png" alt="" class="" >
+                 <img src="./img/doctor.png" alt="di rawat" class="" >
                 </div>
               </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card  " id="card4">
                 <div class="card-body  card-case" id="rip">    
-                 <img src="./img/death.png" alt="" class="" >
+                 <img src="./img/death.png" alt="meninggal" class="" >
                 </div>
               </div>
         </div>
         <div class="col-12 mt-5 mb-3">
-            <h4 class="">Penambahan Kasus Hari Ini di Indonesia</h4>
+            <h4 class="">Kasus Hari Ini di Indonesia</h4>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card  " id="card5">
                 <div class="card-body  card-case"id="posIndoPerHari"> 
-                 <img src="./img/hightemperature.png" alt="" class=""  >
+                 <img src="./img/hightemperature.png" alt="sembuh" class=""  >
                 </div>
               </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card " id="card6">
                 <div class="card-body  card-case"id="semIndoPerHari">
-                 <img src="./img/lowtemperature.png" alt="" class="" >
+                 <img src="./img/lowtemperature.png" alt="positif" class="" >
                 </div>
               </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="card " id="card8">
               <div class="card-body  card-case"id="rawatIndoPerHari">
-               <img src="./img/doctor.png" alt="" class="" >
+               <img src="./img/doctor.png" alt="di rawat" class="" >
               </div>
             </div>
       </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card " id="card7">
                 <div class="card-body  card-case " id="menIndoPerHari">
-                 <img src="./img/death.png" alt="" class="" >                  
+                 <img src="./img/death.png" alt="meninggal" class="" >                  
                 </div>
               </div>
         </div>
-        <div class="col-8 mt-3 text-muted " id="updatet">
+        <div class="col-12 mt-3 text-muted " id="updatet">
             <p>
-                Update Terakhir : <span id="update"></span>
+              Pembaruan Terakhir : <span id="update"></span>
             </p>
-            <p >
-                Sumber Data API :  <a href="https://github.com/Reynadi531/api-covid19-indonesia-v2">https://github.com/Reynadi531/api-covid19-indonesia-v2</a>
-            </p>
+          
 
         </div>
         </div>
         </div>
-      </div></section>
+      </div>
+    </section>
    
     
 <div class="container mb-5 tabelcuy" >
@@ -189,6 +188,59 @@
   </figure>
 </div>
 
+<section class="vaksin">
+<div class="container">
+  <div class="row">
+  
+    <div class="col-12  mb-3">
+      <h4 class="">Progress Vaksinasi COVID-19</h4>
+      
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12" id="vaksin1">
+<!--     
+    <div class="card  ">
+        <div class="card-body  card-case" >
+          <h5 class="card-title text-uppercase mb-3">Semua Vaksinasi Dosis 1</h5>
+            <h3>1.504.975 </h3>
+            <h6>Dosis telah diberikan</h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+            <p>70% dari 1.468.764  telah divaksin</p>
+          </div>
+      </div> -->
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12" id="vaksin2">
+   
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12" id="vaksintenagakes1">
+   
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12" id="vaksintenagakes2">
+   
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12" id="vaksinpetugaspub1">
+   
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12" id="vaksinpetugaspub2">
+   
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12" id="vaksinlansia1">
+   
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12" id="vaksinlansia2">
+   
+</div>
+<div class="col-12 mt-3 text-muted" id="updatetvaksin">
+  <p>
+    Pembaruan Terakhir : <br/><span id="updatevaksin" class="text-primary"></span>
+  </p>
+
+</div>
+  </div>
+</div>
+
+</section>
     <!-- footer -->
     <footer class=" mt-4 pb-2">
       <div class="container">

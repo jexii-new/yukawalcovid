@@ -1,0 +1,903 @@
+body {
+	background-color: #fff !important;
+	font-family: 'Roboto', sans-serif;
+}
+
+.loader_bg {
+	position: fixed;
+	z-index: 999999;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.loader {
+	border: 0 solid transparent;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: calc(50vh - 75px);
+	left: calc(50vw - 75px);
+
+}
+
+.loader:before,
+.loader:after {
+	content: '';
+	border: 1em solid blue;
+	border-radius: 50%;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: loader 2s linear infinite;
+	opacity: 0;
+
+}
+
+.loader:before {
+	animation-delay: .5s;
+}
+
+@keyframes loader {
+	0% {
+		transform: scale(0);
+
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+.hotline {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 50px;
+}
+
+.hotline .telpon {
+	font-size: 15px;
+}
+
+
+.hotline p {
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.hotline a {
+	color: #2019b4 !important;
+	font-weight: bold;
+	margin-left: 5px;
+	font-size: 12px;
+
+}
+
+.hotline a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* button to top */
+#topBtn {
+	bottom: 30px;
+	position: fixed;
+	right: 15px;
+	font-size: 22px;
+	width: 40px;
+	height: 45px;
+	background-color: black;
+	opacity: 0.65;
+
+
+	color: white;
+	border: none;
+	cursor: pointer;
+	display: none;
+	z-index: 9999999;
+	border-radius: 5px;
+
+}
+
+#topBtn:hover {
+	color: lightskyblue;
+}
+
+#wa {
+	display: none;
+}
+
+nav,
+footer {
+	background-color: #0F0E20 !important;
+}
+
+.slider h3,
+.slider h5,
+.clients h3 {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+
+.about .container .row .center {
+	margin-bottom: 10px !important;
+}
+
+.jumbo {
+	height: 350px;
+	margin-bottom: 200px;
+	margin-top: -20px !important;
+}
+
+.jumbo img {
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.jumbo .text-jumbo .judul {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: justify;
+}
+
+.jumbo .text-jumbo p {
+	font-size: 13px;
+	font-weight: 300;
+	text-align: justify;
+}
+
+.jumbo img {
+	width: 100%;
+	height: 220px;
+	padding-top: 20px;
+}
+
+.corona {
+	height: 50px;
+
+}
+
+
+.corona img {
+	height: 20px;
+	width: 20px;
+}
+
+.corona a {
+	text-decoration: none;
+	color: black;
+}
+
+.corona h2 {
+	font-size: 12px;
+	text-align: right;
+	margin: auto;
+	padding-top: 10px;
+	margin-right: 20px;
+}
+
+#panel {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 100px;
+}
+
+#panel .container .row h3 {
+	font-size: 30px !important;
+}
+
+.panel .card-corona .card-panel {
+	border-radius: 20px;
+
+
+}
+
+.parallax-container {
+	height: 20%;
+}
+
+.parallax img {
+	filter: grayscale(1);
+	opacity: 0.8 !important;
+}
+
+.clients img {
+	/*max-width: 130px*/
+
+	filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
+}
+
+.contact {
+	margin-bottom: 50px;
+}
+
+.contact .test .container .card-panel {
+	border-radius: 20px !important;
+}
+
+.contact .test .container ul {
+
+	border-radius: 20px !important;
+}
+
+#statistik {
+	margin-top: 50px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+section,
+footer {
+	padding: 20px 0;
+}
+
+footer {
+	height: 300px;
+
+}
+
+footer img {
+	margin-left: 5px;
+}
+
+.striped {
+	width: 100%;
+	border: 1px solid black;
+
+}
+
+thead {
+	padding-top: 300px;
+}
+
+.teks p {
+	text-align: justify;
+	margin: 0;
+	font-size: 15px;
+
+}
+
+.p1 {
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+#services {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+
+.card.card-panel {
+	height: 300px;
+	border-radius: 20px;
+
+}
+
+.card.card-panel p {
+	font-size: 16px;
+
+
+}
+
+.card.card-panel img {
+	height: 180px;
+	width: 100%;
+}
+
+.card.card-panel h2 {
+	font-size: 20px;
+	font-weight: bold;
+
+	margin-top: 0px;
+
+}
+
+.card-corona {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.9s all ease-in-out;
+
+}
+
+.card-panel-view {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.panel .card-panel.info p {
+	margin-top: 2px;
+	margin-bottom: -1px;
+
+}
+
+.panel .card-panel .text {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+
+.panel .card-panel .text p {
+	width: 100%;
+}
+
+.panel .container .row .card-panel.info {
+	height: 200px;
+
+
+}
+
+.panel .update {
+	font-size: 22px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+	margin-bottom: 30px;
+}
+
+.panel .card-panel.indo p {
+	margin-bottom: -31px;
+
+}
+
+/* statistik */
+
+
+.tabel {
+	height: 400px;
+	overflow: auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.9s all ease-in-out;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	width: 100%;
+}
+
+.tabel-appear {
+	opacity: 1;
+	transform: translateY(0px);
+
+}
+
+.tabel .container .row table tr th {
+	font-size: 8px;
+
+}
+
+.tabel .container .row table tr td {
+	font-size: 8px;
+}
+
+.tabel .container .row .col .card-panel.card-table {
+	height: 100%;
+
+}
+
+.petaP {
+	height: 400px;
+
+}
+
+.petaP h2 {
+	font-size: 30px !important;
+	margin-top: -15px;
+
+}
+
+#mapid {
+	height: 300px !important;
+
+}
+
+#peta {
+	margin-bottom: 40px;
+}
+
+.contact {
+	margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+
+	.jumbo {
+		height: 200px !important;
+		margin-top: 40px !important;
+
+	}
+
+	.tabel {
+		height: 550px;
+	}
+}
+
+
+/*dekstop*/
+@media (min-width: 992px) {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		background-color: white;
+	}
+
+	nav,
+	footer {
+		background-color: #0F0E20;
+	}
+
+	.hotline {
+		display: flex;
+
+		align-items: center;
+	}
+
+	.hotline .telpon {
+		font-size: 20px;
+		margin-right: 3px;
+	}
+
+
+	.hotline p {
+		/* margin-right: 3px; */
+		font-size: 15px;
+	}
+
+	.hotline a {
+		color: #2019b4 !important;
+		font-weight: bold;
+		margin-right: 15px;
+		font-size: 15px;
+
+	}
+
+	.hotline a:hover {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+
+	/* button to top */
+	#topBtn {
+		bottom: 30px;
+		position: fixed;
+		right: 30px;
+		font-size: 22px;
+		width: 50px;
+		height: 50px;
+		background-color: black;
+		opacity: 0.8;
+		color: white;
+		border: none;
+		cursor: pointer;
+		display: none;
+		z-index: 99;
+		border-radius: 10px;
+
+	}
+
+	#topBtn:hover {
+		color: lightskyblue;
+	}
+
+	#wa {
+		bottom: 150px;
+		position: fixed;
+		right: 40px;
+		background-color: none;
+
+		opacity: 0.8;
+		display: none;
+		border: none;
+
+		z-index: 99;
+		border: none;
+
+	}
+
+	#wa img {
+
+		width: 40px !important;
+		height: 40px !important;
+	}
+
+
+	/* akhir hotline */
+	/* statistik */
+
+	highcharts-figure .container {
+		width: 100%;
+
+	}
+
+	.jumbo {
+		height: 300px !important;
+		margin-top: -20px !important;
+	}
+
+	.jumbo .container {
+		margin-top: 60px;
+	}
+
+	.jumbo .text-jumbo .judul {
+		font-size: 40px;
+		margin-top: 100px;
+		text-align: justify;
+
+	}
+
+	.jumbo .text-jumbo p {
+		font-size: 15px;
+	}
+
+	.text-jumbo {
+		opacity: 0;
+		transform: translateX(20px);
+		transition: 0.9s all ease-in-out;
+
+	}
+
+	.jumbo img {
+		width: 100%;
+		height: 400px;
+		margin: auto;
+	}
+
+	.text-view {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+	.gambar {
+		opacity: 0;
+		transform: translateX(100px);
+		transition: 0.9s all ease-in-out;
+
+
+	}
+
+	.gambar-view {
+
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+
+
+	.corona {
+		height: 50px;
+
+	}
+
+	.corona img {
+		height: 20px;
+		width: 20px;
+		line-height: 50px;
+
+	}
+
+	.corona a {
+		text-decoration: none;
+		color: black;
+		line-height: 50px;
+	}
+
+	.corona h2 {
+		font-size: 15px;
+		text-align: right;
+		margin: auto;
+		padding-top: 10px;
+		margin-right: 220px;
+
+	}
+
+	.nav .right a:hover {
+		background-color: blue;
+	}
+
+	.slider h3,
+	.slider h5,
+	.clients h3 {
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+	}
+
+	.parallax-container {
+		height: 20%;
+	}
+
+	.parallax img {
+		filter: grayscale(1);
+		opacity: 0.9 !important;
+	}
+
+	.clients img {
+		/*max-width: 130px*/
+
+		filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
+	}
+
+	.about {
+		margin-bottom: 30px !important;
+	}
+
+	.about .container .row .center {
+		margin-bottom: 30px !important;
+	}
+
+	/* contact index */
+	.contact {
+		margin-bottom: 30px;
+
+	}
+
+	.contact .test .container .card-panel {
+		border-radius: 20px !important;
+		margin-top: 30px;
+	}
+
+	.contact .test .container ul {
+
+		border-radius: 20px !important;
+	}
+
+
+	section,
+	footer {
+		padding: 20px 0;
+	}
+
+	footer {
+		height: 300px;
+	}
+
+	footer img {
+		margin-left: 5px;
+	}
+
+	.striped {
+		width: 100%;
+		border: 1px solid black;
+
+	}
+
+	thead {
+		padding-top: 300px;
+	}
+
+	.teks p {
+		text-align: justify;
+		margin: 0;
+		font-size: 15px;
+
+	}
+
+
+	.p1 {
+		font-size: 15px;
+		font-weight: bold;
+
+	}
+
+	.panel .card-panel.info p {
+		margin-top: 0px;
+		margin-bottom: -1px;
+	}
+
+	section .card-panel.computer:hover {
+
+		background-color: #17A2B8;
+		transition: 1s;
+
+		color: white;
+	}
+
+	section .card-panel.android:hover {
+		color: white;
+		background-color: #28A745;
+		transition: 1s;
+
+
+	}
+
+	section .card-panel.games:hover {
+		color: white;
+		background-color: #1a237e;
+		transition: 1s;
+
+	}
+
+	#statistik {
+		margin-top: 50px;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+	}
+
+	#statistik #container {
+		height: 600px !important;
+	}
+
+	#services {
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		margin-bottom: 50px;
+	}
+
+	#services {
+		margin-bottom: 30px;
+	}
+
+	.services .container .row .light {
+		margin-bottom: 30px !important;
+	}
+
+	.card.card-panel {
+		height: 300px;
+		border-radius: 10px;
+	}
+
+	.card.card-panel p {
+		font-size: 16px;
+		margin-left: -10px;
+
+	}
+
+	.card.card-panel h2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-left: -10px;
+		margin-top: -5px;
+
+	}
+
+	.card-corona {
+		opacity: 0;
+		transform: translateY(20px);
+		transition: 0.9s all ease-in-out;
+
+	}
+
+	.card-panel-view {
+		opacity: 1;
+		transform: translateY(0x);
+	}
+
+	#panel .container .row h3 {
+		font-size: 40px !important;
+	}
+
+	.panel .card-panel .text {
+
+		display: flex;
+
+		margin-top: 20px !important;
+	}
+
+
+	.panel .card-panel.lime .text {
+
+		display: inline-block;
+		justify-content: space-around;
+
+		margin-left: 5px;
+	}
+
+
+
+
+	.panel .container .row .card-panel:hover {
+		background-color: red;
+	}
+
+	.panel .container .row .card-panel.info {
+		height: 250px;
+
+
+	}
+
+	.panel .card-panel.medium .panel .update {
+		font-size: 32px;
+
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+
+	.panel .container .row .card-panel.info img {
+		height: 50px;
+		width: 50px;
+		display: flex;
+		margin: auto;
+		margin-top: 20px;
+	}
+
+
+	.panel .card-panel.indo p {
+		margin-top: 10px;
+		margin-bottom: -30px;
+
+	}
+
+
+	.tabel {
+		height: 550px;
+		overflow: scroll;
+		margin-bottom: 50px;
+		margin-top: 50px;
+
+		opacity: 0;
+		transform: translateY(100px);
+		transition: 0.9s all ease-in-out;
+	}
+
+	.tabel-appear {
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+
+
+	.tabel .container .row table tr th {
+		font-size: 15px;
+
+	}
+
+	.tabel .container .row table tr td {
+		font-size: 15px;
+	}
+
+
+	.tabel .container .row .col .card-panel.card-table {
+		height: 100%;
+	}
+
+	.petaP {
+		height: 600px;
+
+	}
+
+	.petaP h2 {
+		font-size: 40px !important;
+		margin-top: -20px;
+		margin-bottom: 35px;
+
+	}
+
+	#mapid {
+		height: 500px !important;
+
+	}
+
+	#peta {
+		margin-bottom: 40px;
+	}
+
+
+
+	/*jumbo*/
+
+	/* statistik */
+
+	/* contact index */
+
+	.tabelprovinsi {
+		height: 550px;
+		overflow: auto;
+	}
+}

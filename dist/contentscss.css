@@ -1,0 +1,943 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PopLight;
+    src: url('./fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: PopRegular;
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: PopMedium;
+    src: url('./fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: RobRegular;
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: RobMedium;
+    src: url('./fonts/Roboto-Medium.ttf');
+}
+
+body {
+    font-family: PopLight;
+
+}
+
+html,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body .portofolio {
+    overflow: hidden;
+}
+
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    border: 1em solid #5CD3A1;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        ;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+.logo {
+    font-size: 48px;
+
+}
+
+.page {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+
+
+
+.container-jumbotron {
+    width: 90%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /*grid-template-rows: repeat(3, 500px); */
+    justify-content: space-between;
+    height: 650px;
+
+}
+
+.jumbotron {
+    display: flex;
+
+
+}
+
+.about h1 {
+    font-family: RobMedium;
+    margin-bottom: 10px;
+    font-size: 48px;
+}
+
+.about h3 {
+    font-family: RobMedium;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-family: PopMedium;
+}
+
+.about span {
+    color: #5CD3A1;
+    font-weight: bold;
+}
+
+.about a {
+    background-color: #5CD3A1;
+    text-decoration: none;
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+
+.gambar .hiasan {
+    position: absolute;
+    top: 540px;
+    left: 0;
+}
+
+.social-links img {
+    margin-right: 10px;
+}
+
+/*bukan mobile*/
+.nav-open {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50vh;
+    background: white;
+    z-index: 1;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+}
+
+.contact {
+
+    grid-column: 2/3;
+}
+
+.nav-open h3 {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.nav-open p {
+    font-size: 12px;
+}
+
+.nav-open p a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.social-links img {
+    margin-right: 10px;
+}
+
+.logo,
+.menu {
+    z-index: 2;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+/*services*/
+.ccontainer-services {
+    width: 90%;
+
+}
+
+.tittle-services {
+    margin-bottom: 60px;
+}
+
+.services {
+
+    display: grid;
+    grid-template-columns: repeat(autofit, 1fr);
+
+    grid-template-areas:
+        'judul judul judul'
+        'card1 card2 card3';
+    justify-content: space-around;
+
+
+
+}
+
+
+.tittle-services {
+    grid-area: judul;
+    text-align: center;
+
+
+}
+
+.card {
+
+
+    display: flex;
+
+
+}
+
+.card-1 {
+
+    grid-area: card1;
+
+    text-align: center;
+
+}
+
+.card-2 {
+    grid-area: card2;
+    text-align: center;
+
+}
+
+.card-3 {
+    grid-area: card3;
+    text-align: center;
+}
+
+.garis {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+
+/*akhir services*/
+
+
+/*portfolio*/
+
+.container-portfolio {
+    width: 90%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(autofit, 1fr);
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-areas:
+        'judul judul judul'
+        'portfolio1 portfolio1 portfolio1'
+        'portfolio2 portfolio2 portfolio2'
+        'portfolio3 portfolio3 portfolio3';
+
+
+}
+
+.tittle-portfolio {
+    grid-area: judul;
+    text-align: center;
+
+
+}
+
+.portfolio1 {
+    grid-area: portfolio1;
+    margin-bottom: 30px;
+
+
+}
+
+.container-portfolio {
+    overflow: hidden;
+}
+
+.container-portfolio img {
+    transition: all 0.3s ease-out;
+}
+
+.container-portfolio img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.portfolio1 img {
+    width: 100%;
+    height: 500px;
+
+}
+
+.portfolio2 {
+    grid-area: portfolio2;
+    margin-bottom: 30px;
+}
+
+.portfolio2 img {
+    width: 100%;
+    height: 500px;
+}
+
+.portfolio3 {
+    grid-area: portfolio3;
+}
+
+.portfolio3 img {
+    width: 100%;
+    height: 500px;
+}
+
+.modal {
+    background: black;
+    opacity: 0;
+
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.25s ease-out;
+}
+
+.modal p {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-img {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.2s ease-out;
+}
+
+.full-img-open {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+/*akhir portfolio*/
+
+/*projek*/
+
+.container-project{
+    width: 90%;
+   
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.subproject{
+    display: flex;
+     border:1px solid black;
+     justify-content: center;
+}
+/*akhir projek*/
+@media (max-width: 1024px) {
+
+
+    .container-jumbotron {
+        width: 90%;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+        justify-content: space-between;
+        height: 650px;
+        file: ///C:/Data%20Aldo/companyprofile/img/line2.png
+    }
+
+    .nav-open {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 30vh;
+        background: white;
+        z-index: 1;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        transform: translateY(-100%);
+    }
+
+    .jumbotron {
+        display: flex;
+
+
+    }
+
+    .about h1 {
+        font-family: RobMedium;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .about h3 {
+        font-family: RobMedium;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .about p {
+        font-family: PopMedium;
+        font-size: 16px
+    }
+
+    .about span {
+        color: #5CD3A1;
+        font-weight: bold;
+    }
+
+    .about a {
+        background-color: #5CD3A1;
+        text-decoration: none;
+        display: inline-block;
+        width: 70px;
+        font-size: 10px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        margin-top: 35px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .gambar img.jumbo {
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .gambar .hiasan {
+        position: absolute;
+        top: 600px;
+        left: 0;
+    }
+
+    .services h1 {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    .pages {
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+    }
+
+    .profile {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .social-links img {
+        margin-right: 10px;
+    }
+
+}
+
+/*mobile*/
+@media (max-width: 576px) {
+    .container-jumbotron {
+        width: 90%;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+        /*justify-content:    space-between   ; */
+
+        grid-gap: 5px;
+
+    }
+
+    .logo {
+        font-size: 20px;
+
+    }
+
+    .jumbotron {
+
+
+        display: flex;
+
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .about {
+        order: 2;
+        width: 90%;
+        position: absolute;
+        top: 470px;
+
+
+    }
+
+    .about h1 {
+        font-family: RobMedium;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .about h3 {
+        font-family: RobMedium;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .about p {
+        font-family: PopMedium;
+        font-size: 10px;
+    }
+
+    .about span {
+        color: #5CD3A1;
+        font-weight: bold;
+    }
+
+    .about a {
+        background-color: #5CD3A1;
+        text-decoration: none;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .gambar img.jumbo {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .gambar .hiasan {
+        position: absolute;
+        top: 680px;
+        left: 0;
+        width: 100px;
+
+    }
+
+
+    .nav-open {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50vh;
+        background: white;
+        z-index: 1;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        transform: translateY(-100%);
+    }
+
+    .contact {
+
+        grid-column: 2/3;
+    }
+
+
+    .nav-open h3 {
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+
+    .nav-open p {
+        font-size: 12px;
+    }
+
+    .nav-open p a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+    }
+
+
+    .logo,
+    .menu {
+        z-index: 2;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+
+    /*services*/
+    .garis {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+
+    .services {
+
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+
+        grid-template-areas:
+            'judul '
+            'card1  '
+            'card2 '
+            ' card3';
+        justify-content: space-around;
+
+        margin-top: -100px;
+
+    }
+
+
+    .tittle-services {
+        grid-area: judul;
+        text-align: center;
+        margin-bottom: -10px;
+
+
+    }
+
+    .card {
+
+
+        display: flex;
+
+
+    }
+
+    .card-1 {
+
+        grid-area: card1;
+
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    .card-2 {
+        grid-area: card2;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    .card-3 {
+        grid-area: card3;
+        text-align: center;
+    }
+
+
+
+    /*portfolio*/
+    .portfolio1 img {
+
+        height: 300px;
+
+
+    }
+
+    .portfolio2 img {
+
+        height: 300px;
+
+    }
+
+    .portfolio3 img {
+
+        height: 300px;
+    }
+
+    .modal p {
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+    }
+}
+
+
+
+/*mobille */
+@media (max-width: 760px) {
+    .line {
+        display: none;
+    }
+
+    .page {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hero img {
+        height: 300px;
+    }
+
+    .details h1 {
+        font-weight: 30px;
+    }
+
+    .details h2 {
+        font-weight: 28px;
+    }
+
+
+    .container-jumbotron {
+        width: 90%;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+        /*justify-content:    space-between   ; */
+
+        grid-gap: 5px;
+        height: 600px;
+    }
+
+    .logo {
+        font-size: 20px;
+
+    }
+
+    .jumbotron {
+
+
+        display: flex;
+
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .about {
+        order: 2;
+        width: 90%;
+        position: absolute;
+        top: 470px;
+
+
+    }
+
+    .about h1 {
+        font-family: RobMedium;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .about h3 {
+        font-family: RobMedium;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .about p {
+        font-family: PopMedium;
+        font-size: 10px;
+    }
+
+    .about span {
+        color: #5CD3A1;
+        font-weight: bold;
+    }
+
+    .about a {
+        background-color: #5CD3A1;
+        text-decoration: none;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .gambar img.jumbo {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .gambar .hiasan {
+        position: absolute;
+        top: 680px;
+        left: 0;
+        width: 100px;
+
+    }
+
+
+    .nav-open {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50vh;
+        background: white;
+        z-index: 1;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        transform: translateY(-100%);
+    }
+
+    .contact {
+
+        grid-column: 2/3;
+    }
+
+
+    .nav-open h3 {
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+
+    .social {
+        margin-top: 10px;
+
+
+    }
+
+    .daftar {
+        margin-top: 35px;
+    }
+
+    .nav-open p {
+        font-size: 12px;
+    }
+
+    .nav-open p a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+    }
+
+
+    .logo,
+    .menu {
+        z-index: 2;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+}
