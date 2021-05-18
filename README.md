@@ -1,4 +1,4 @@
-# yukawalcovid
+# yukawalcovid.tech
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) ![Website Up](https://img.shields.io/website-up-down-brightgreen-red/https/mazipan.space.svg)
 
