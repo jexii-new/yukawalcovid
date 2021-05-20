@@ -106,46 +106,71 @@ $(document).ready(function(){
     $('#hospital').append(`<p style="color:#f4a261" id="isidirawat">---</p>`) ;
     $('#rip').append(`<p style="color:#e63946" id="isimeninggal">---</p>`) ;
 
-    $('#posIndoPerHari').append(`<p style="color:#faa307" id="positifperhari">---</p>`);
-    $('#semIndoPerHari').append(`<p style="color:#2a9d8f" id="sembuhperhari">---</p>`) ;
-    $('#rawatIndoPerHari').append(`<p style="color:#f4a261" id="rawatPerHari">---</p>`) ;
-    $('#menIndoPerHari').append(`<p style="color:#e63946" id="meninggalperhari">---</p>`) ;
+    // $('#posIndoPerHari').append(`<p style="color:#faa307" id="positifperhari">---</p>`);
+    // $('#semIndoPerHari').append(`<p style="color:#2a9d8f" id="sembuhperhari">---</p>`) ;
+    // $('#rawatIndoPerHari').append(`<p style="color:#f4a261" id="rawatPerHari">---</p>`) ;
+    // $('#menIndoPerHari').append(`<p style="color:#e63946" id="meninggalperhari">---</p>`) ;
 })
-$.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia', function(hasil){
+// $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia', function(hasil){
     
-    // dirawat, sembuh, meninggal, positif
-    // var total = 0;
+//     // dirawat, sembuh, meninggal, positif
+//     // var total = 0;
     
-    setTimeout(() => {
+//     setTimeout(() => {
 
-        $('#isikonfirm').html(`<h5 style="color:#000" >Total Positif</h5><p>${set_titik(hasil.positif)}</p>`);
-        $('#isisembuh').html(`<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(hasil.sembuh)}</p>`) ;
-        $('#isidirawat').html(`<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(hasil.dirawat)}</p>`) ;
-        $('#isimeninggal').html(`<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(hasil.meninggal)}</p>`) ;
-},1000);
-// console.log(hasil[2].attributes);
-
-
-    // })
-});
+//         $('#isikonfirm').html(`<h5 style="color:#000" >Total Positif</h5><p>${set_titik(hasil.positif)}</p>`);
+//         $('#isisembuh').html(`<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(hasil.sembuh)}</p>`) ;
+//         $('#isidirawat').html(`<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(hasil.dirawat)}</p>`) ;
+//         $('#isimeninggal').html(`<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(hasil.meninggal)}</p>`) ;
+// },1000);
+// // console.log(hasil[2].attributes);
 
 
+//     // })
+// });
 
-$.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian', function(data){
-    // console.log(data);
-    var update = data;
-        var panjang = update.length-1;
+fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
+.then(response => response.json())
+.then(data => {
+  
+  let dataIndo = data[0];
+  let isikonfirm = document.querySelector('#isikonfirm');
+  let isisembuh = document.querySelector('#isisembuh');
+  let isidirawat = document.querySelector('#isidirawat');
+  let isimeninggal = document.querySelector('#isimeninggal');
+
+  setTimeout(() => {
+    isikonfirm.innerHTML = `<h5 style="color:#000" >Total Positif</h5><p>${set_titik((dataIndo.confirmed))}</p>`;
+    isisembuh.innerHTML = `<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(dataIndo.recovered)}</p>`;
+    isidirawat.innerHTML = `<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(dataIndo.active)}</p>`;
+    isimeninggal.innerHTML = `<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(dataIndo.deaths)}</p>`
+
+    
+  })
+})
+fetch('https://covid19.mathdro.id/api/countries/indonesia')
+.then(response => response.json())
+.then(data => {
+  let update = document.querySelector('#update')
+  update.innerHTML =`${data.lastUpdate.substr(0,10)}</p>`
+  
+})
+update
+// $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian', function(data){
+//     // console.log(data);
+//     var update = data;
+//         var panjang = update.length-1;
         
-        setTimeout(() => {
-        $('#positifperhari').html(`<h5 style="color:#000">Total Positif</h5><p> ${set_titik(update[panjang].positif)}</p>`);
-        $('#sembuhperhari').html(`<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(update[panjang].sembuh)}</p>`) ;
-        $('#meninggalperhari').html(`<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(update[panjang].meninggal)}</p>`) ;
-        $('#rawatPerHari').html(`<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(update[panjang].dirawat)}</p>`) ;
-        $('#update').append(`<p style="color:#007bff; ">${update[panjang].tanggal.substr(0,10)}</p>`) ;
-        // console.log(update[panjang] );
-    },1000);
+//         setTimeout(() => {
+//         $('#positifperhari').html(`<h5 style="color:#000">Total Positif</h5><p> ${set_titik(update[panjang].positif)}</p>`);
+//         $('#sembuhperhari').html(`<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(update[panjang].sembuh)}</p>`) ;
+//         $('#meninggalperhari').html(`<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(update[panjang].meninggal)}</p>`) ;
+//         $('#rawatPerHari').html(`<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(update[panjang].dirawat)}</p>`) ;
+//         $('#update').append(`<p style="color:#007bff; ">${update[panjang].tanggal.substr(0,10)}</p>`) ;
+//         // console.log(update[panjang] );
+//     },1000);
 
-});
+// });
 
 
 $.getJSON('//apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi', function(data){
@@ -161,6 +186,11 @@ $.each(dataAll, function(i,data){
     </tr>`);
 })
 }); 
+fetch('//apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi')
+.then(response =>  response.json())
+.then(data => {
+  console.log(data)
+})
 
 
 
@@ -285,7 +315,6 @@ fetch('https://cekdiri.id/vaksinasi/')
   </div>
     `
     updatevaksin.innerHTML = coba[panjang].date;
- console.log(coba[panjang].date)
 }
     
     );
