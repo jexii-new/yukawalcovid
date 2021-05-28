@@ -160,7 +160,7 @@ $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian', func
         $('#sembuhperhari').html(`<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(update[panjang].sembuh)}</p>`) ;
         $('#meninggalperhari').html(`<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(update[panjang].meninggal)}</p>`) ;
         $('#rawatPerHari').html(`<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(update[panjang].dirawat)}</p>`) ;
-        // console.log(update[panjang] );
+        $('#update').html(`${update[panjang].tanggal.substr(0,10)}`);
     },1000);
 
 });
