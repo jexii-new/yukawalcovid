@@ -129,7 +129,7 @@ $(document).ready(function(){
 //     // })
 // });
 
-fetch('https://covid19.mathdro.id/api/countries/esia/confirmed')
+fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
 .then(response => 
   {
     console.log(response);
@@ -150,7 +150,8 @@ fetch('https://covid19.mathdro.id/api/countries/esia/confirmed')
     isikonfirm.innerHTML = `<h5 style="color:#000" >Total Positif</h5><p>${set_titik((dataIndo.confirmed))}</p>`;
     isisembuh.innerHTML = `<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(dataIndo.recovered)}</p>`;
     isidirawat.innerHTML = `<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(dataIndo.active)}</p>`;
-    isimeninggal.innerHTML = `<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(dataIndo.deaths)}</p>`
+    isimeninggal.innerHTML = `<h5 style="colnpm run deploy
+    or:#000">Total Meninggal</h5><p>${set_titik(dataIndo.deaths)}</p>`
 
     
   },1000)
