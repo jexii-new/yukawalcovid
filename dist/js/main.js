@@ -129,10 +129,17 @@ $(document).ready(function(){
 //     // })
 // });
 
-fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
-.then(response => response.json())
+fetch('https://covid19.mathdro.id/api/countries/esia/confirmed')
+.then(response => 
+  {
+    console.log(response);
+    if(!response.ok){
+      throw new Error (response.statusText);
+    }
+    return response.json();
+  }
+  )
 .then(data => {
-  
   let dataIndo = data[0];
   let isikonfirm = document.querySelector('#isikonfirm');
   let isisembuh = document.querySelector('#isisembuh');
@@ -146,8 +153,11 @@ fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
     isimeninggal.innerHTML = `<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(dataIndo.deaths)}</p>`
 
     
-  })
-})
+  },1000)
+}).catch((error) => {
+  alert(error);
+
+});
 
 
 $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian', function(data){
