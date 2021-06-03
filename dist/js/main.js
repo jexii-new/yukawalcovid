@@ -132,7 +132,6 @@ $(document).ready(function(){
 fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
 .then(response => 
   {
-    console.log(response);
     if(!response.ok){
       throw new Error (response.statusText);
     }
