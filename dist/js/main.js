@@ -317,7 +317,24 @@ fetch('https://cekdiri.id/vaksinasi/')
     
     );
 
-
+// api berita
+// fetch('https://berita-indo-api.vercel.app/v1/cnn-news/nasional')
+// .then(response => 
+//   response.json()
+// )
+// .then(response => {
+//   // if(respo)
+//   let data = response.data
+//   console.log(data)
+//   data.forEach(data => { 
+    
+//     let title = data.title;
+    
+//     // console.log(data)
+//   }
+//     )
+//   // console.log(data);
+// })
 
 
 
