@@ -155,8 +155,17 @@ fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
     
   },1000)
 }).catch((error) => {
-  alert(error);
-
+  // let dataIndoErr = data[0];
+  let isikonfirmErr = document.querySelector('#isikonfirm');
+  let isisembuhErr = document.querySelector('#isisembuh');
+  let isidirawatErr = document.querySelector('#isidirawat');
+  let isimeninggalErr = document.querySelector('#isimeninggal');
+  // alert(error);
+  isikonfirmErr.innerHTML = `<h5 style="color:#000" >Total Positif</h5><p>data error</p>`;
+  isisembuhErr.innerHTML = `<h5 style="color:#000">Total Sembuh</h5><p>data error</p>`;
+  isidirawatErr.innerHTML = `<h5 style="color:#000">Total Di Rawat</h5><p>data error</p>`;
+  isimeninggalErr.innerHTML = `<h5 style="colnpm run deploy
+  or:#000">Total Meninggal</h5><p>data error</p>`
 });
 
 
@@ -192,11 +201,17 @@ $.each(dataAll, function(i,data){
 
 
 
+function handleErrors(data) {
+  if (!data.ok) throw new Error(data.error);
+  return data;
+}
 
 // vaksi fetch data
 fetch('https://cekdiri.id/vaksinasi/')
 .then(response => response.json())
+.then(handleErrors)
 .then(data => {
+
     let coba = data.monitoring;  
     let panjang = coba.length-1;
     let vaksin1 = document.querySelector('#vaksin1');
@@ -315,7 +330,10 @@ fetch('https://cekdiri.id/vaksinasi/')
     `
 }
     
-    );
+    ).catch(err => {
+      let vaksinErr = document.querySelector('#vaksin1');
+      vaksinErr.innerHTML = `<p class="text-left">Mohon maaf data sedang tidak bisa di akses.</p>`
+      $})
 
 // api berita
 // fetch('https://berita-indo-api.vercel.app/v1/cnn-news/nasional')
