@@ -75,6 +75,10 @@ $(document).ready(function () {
 });
 // }
 
+const backTop = () =>{
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+}
 // loader
 setTimeout(function () {
     $('.progress-container').fadeToggle();
