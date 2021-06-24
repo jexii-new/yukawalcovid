@@ -436,7 +436,10 @@ section.vaksin h6 {
 section.vaksin p {
   margin-top: 5px;
 }
-
+.heart:before {
+  content: '\2665';
+  color: red;
+}
 .footer {
   border-top: 1px solid rgba(95, 95, 95, 0.1);
   min-height: 280px;
@@ -613,7 +616,8 @@ section.vaksin p {
   }
   .coronavirus {
     margin-top: 80px;
-    font-family: 'poppins', sans-serif;
+    font-family: 'poppins',
+ sans-serif;
   }
   .coronavirus #updatet p {
     font-size: 14px !important;
@@ -813,6 +817,11 @@ section.vaksin p {
   }
   #topBtn:hover {
     color: lightskyblue;
+  }
+
+  .heart:before {
+    content: '\2665';
+    color: red;
   }
 }
 
