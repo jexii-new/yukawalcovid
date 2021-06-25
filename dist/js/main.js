@@ -290,9 +290,9 @@ fetch('https://cekdiri.id/vaksinasi/')
         <h3 style="color:#2A9D8F;">${set_titik(coba[panjang].tahapan_vaksinasi.petugas_publik.sudah_vaksin1)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
-          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.petugas_publik_vaksinasi1}; background-color:#2A9D8F;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.petugas_publik_vaksinasi1}</div>
+          <div class="progress-bar" role="progressbar" style="width:100%; background-color:#2A9D8F;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
         </div>
-        <p>${coba[panjang].cakupan.petugas_publik_vaksinasi1} dari ${set_titik(coba[panjang].sasaran_vaksinasi_petugas_publik)}  telah divaksin</p>
+        <p>100% dari ${set_titik(coba[panjang].sasaran_vaksinasi_petugas_publik)}  telah divaksin</p>
       </div>
   </div>
     `
