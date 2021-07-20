@@ -263,8 +263,8 @@ section.loader {
 
 .coronavirus .jumbotron {
   background-color: white;
-  padding: 0;
-  margin: 0;
+  /* padding: 22px 0 0 0; */
+  margin: 22px 0 -70px 0;
 }
 
 .coronavirus .judul h1 {
@@ -298,8 +298,8 @@ section.loader {
 }
 
 .coronavirus .card-case img {
-  height: 90px;
-  width: 90px;
+  height: 80px;
+  width: 80px;
   -webkit-box-ordinal-group: 6;
       -ms-flex-order: 5;
           order: 5;
@@ -328,7 +328,7 @@ section.loader {
 }
 
 .coronavirus .card-case p {
-  font-size: 40px;
+  font-size: 33px;
   margin-top: 9px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
