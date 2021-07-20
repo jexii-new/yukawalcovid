@@ -263,6 +263,8 @@ section.loader {
 
 .coronavirus .jumbotron {
   background-color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .coronavirus .judul h1 {

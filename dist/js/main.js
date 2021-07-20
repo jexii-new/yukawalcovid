@@ -115,23 +115,7 @@ $(document).ready(function(){
     $('#rawatIndoPerHari').append(`<p style="color:#f4a261" id="rawatPerHari">---</p>`) ;
     $('#menIndoPerHari').append(`<p style="color:#e63946" id="meninggalperhari">---</p>`) ;
 })
-// $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia', function(hasil){
-    
-//     // dirawat, sembuh, meninggal, positif
-//     // var total = 0;
-    
-//     setTimeout(() => {
 
-//         $('#isikonfirm').html(`<h5 style="color:#000" >Total Positif</h5><p>${set_titik(hasil.positif)}</p>`);
-//         $('#isisembuh').html(`<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(hasil.sembuh)}</p>`) ;
-//         $('#isidirawat').html(`<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(hasil.dirawat)}</p>`) ;
-//         $('#isimeninggal').html(`<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(hasil.meninggal)}</p>`) ;
-// },1000);
-// // console.log(hasil[2].attributes);
-
-
-//     // })
-// });
 
 fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
 .then(response => 
