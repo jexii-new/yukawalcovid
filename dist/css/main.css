@@ -63,6 +63,7 @@ body {
 
 body {
   margin: 0;
+ 
 }
 
 .checkbox {
@@ -265,6 +266,8 @@ section.loader {
   background-color: white;
   /* padding: 22px 0 0 0; */
   margin: 22px 0 -70px 0;
+ 
+
 }
 
 .coronavirus .judul h1 {
@@ -468,7 +471,16 @@ section.vaksin p {
   font-size: 12px;
 }
 
-
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+.icon-call {
+  background-image: url(../img/011-emergency\ call.svg);
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
 @media (min-width: 768px) {
   .navbar {
     font-size: 16px;
