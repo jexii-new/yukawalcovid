@@ -233,7 +233,7 @@ section.loader {
 
 /* button to top */
 #topBtn {
-  bottom: 30px;
+  bottom: 70px;
   position: fixed;
   right: 15px;
   font-size: 22px;
@@ -436,34 +436,7 @@ section.vaksin h6 {
 section.vaksin p {
   margin-top: 5px;
 }
-.heart:before {
-  content: '\2665';
-  color: red;
-}
-.footer {
-  border-top: 1px solid rgba(95, 95, 95, 0.1);
-  min-height: 280px;
-  background-color: #292C35;
-  color: white;
-}
 
-.footer .footer-bakcground h3 {
-  font-size: 25px;
-}
-
-.footer .footer-bakcground p {
-  font-size: 12px;
-}
-
-.footer .footer-bakcground a {
-  color: white;
-}
-
-.footer .footer-bakcground img {
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
-}
 
 .file {
   margin-top: 60px;
@@ -472,6 +445,27 @@ section.vaksin p {
 .file h1 {
   font-size: 28px;
 }
+.footer{
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #c7c4c4;
+  display: grid;
+  z-index: 100;
+  grid-template-columns: repeat(4,25% [col-start]);
+  
+}
+.footer button{
+  background: transparent;
+  border: none;
+}
+.footer  a {
+  color:black;
+  font-size: 12px;
+}
+
 
 @media (min-width: 768px) {
   .navbar {
@@ -756,39 +750,7 @@ section.vaksin p {
   section.vaksin p {
     margin-top: 5px;
   }
-  .footer {
-    border-top: 1px solid rgba(95, 95, 95, 0.1);
-    min-height: 250px;
-    background-color: #292C35;
-    color: white;
-  }
-  .footer .btnColor {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-  }
-  .footer .hiasan img {
-    width: 265px !important;
-    height: 265px !important;
-  }
-  .footer .footer-bakcground h3 {
-    font-size: 32px;
-  }
-  .footer .footer-bakcground p {
-    font-size: 18px;
-  }
-  .footer .footer-bakcground a {
-    color: white;
-  }
-  .footer .footer-bakcground a:hover {
-    color: black;
-  }
-  .footer .footer-bakcground img {
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-  }
+ 
   .file {
     margin-top: 80px;
   }
@@ -800,7 +762,7 @@ section.vaksin p {
   }
   /* button to top */
   #topBtn {
-    bottom: 30px;
+    bottom: 70px;
     position: fixed;
     right: 15px;
     font-size: 22px;
@@ -817,11 +779,6 @@ section.vaksin p {
   }
   #topBtn:hover {
     color: lightskyblue;
-  }
-
-  .heart:before {
-    content: '\2665';
-    color: red;
   }
 }
 

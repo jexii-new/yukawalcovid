@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fimanager:before {
+    display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-001-hospital:before { content: "\f100"; }
+.flaticon-002-seats:before { content: "\f101"; }
+.flaticon-003-hospital-bed:before { content: "\f102"; }
+.flaticon-004-medical-report:before { content: "\f103"; }
+.flaticon-005-form:before { content: "\f104"; }
+.flaticon-006-scanner:before { content: "\f105"; }
+.flaticon-007-location:before { content: "\f106"; }
+.flaticon-008-health-insurance:before { content: "\f107"; }
+.flaticon-009-first-aid:before { content: "\f108"; }
+.flaticon-010-face-mask:before { content: "\f109"; }
+.flaticon-011-emergency-call:before { content: "\f10a"; }
+.flaticon-012-bottle:before { content: "\f10b"; }
+.flaticon-013-heart:before { content: "\f10c"; }
+.flaticon-014-bowl:before { content: "\f10d"; }
+.flaticon-015-crutch:before { content: "\f10e"; }
+.flaticon-016-hand-sanitizer:before { content: "\f10f"; }
+.flaticon-017-tooth:before { content: "\f110"; }
+.flaticon-018-hospital:before { content: "\f111"; }
+.flaticon-019-emergency-call:before { content: "\f112"; }
+.flaticon-020-calendar:before { content: "\f113"; }
+.flaticon-021-home:before { content: "\f114"; }
+.flaticon-022-folder:before { content: "\f115"; }
+.flaticon-023-pregnancy-test:before { content: "\f116"; }
+.flaticon-024-stethoscope:before { content: "\f117"; }
+.flaticon-025-health-report:before { content: "\f118"; }
+.flaticon-026-briefcase:before { content: "\f119"; }
+.flaticon-027-tablet:before { content: "\f11a"; }
+.flaticon-028-map-point:before { content: "\f11b"; }
+.flaticon-029-crutches:before { content: "\f11c"; }
+.flaticon-030-injection:before { content: "\f11d"; }
+.flaticon-031-dna:before { content: "\f11e"; }
+.flaticon-032-brain:before { content: "\f11f"; }
+.flaticon-033-lungs:before { content: "\f120"; }
+.flaticon-034-eye-ball:before { content: "\f121"; }
+.flaticon-035-virus:before { content: "\f122"; }
+.flaticon-036-pills:before { content: "\f123"; }
+.flaticon-037-bone:before { content: "\f124"; }
+.flaticon-038-test-tube:before { content: "\f125"; }
+.flaticon-039-vaccine:before { content: "\f126"; }
+.flaticon-040-wheelchair:before { content: "\f127"; }
+.flaticon-041-female:before { content: "\f128"; }
+.flaticon-042-medical-insurance:before { content: "\f129"; }
+.flaticon-043-medical-book:before { content: "\f12a"; }
+.flaticon-044-tent:before { content: "\f12b"; }
+.flaticon-045-man:before { content: "\f12c"; }
+
+$font-Flaticon-001-hospital: "\f100";
+$font-Flaticon-002-seats: "\f101";
+$font-Flaticon-003-hospital-bed: "\f102";
+$font-Flaticon-004-medical-report: "\f103";
+$font-Flaticon-005-form: "\f104";
+$font-Flaticon-006-scanner: "\f105";
+$font-Flaticon-007-location: "\f106";
+$font-Flaticon-008-health-insurance: "\f107";
+$font-Flaticon-009-first-aid: "\f108";
+$font-Flaticon-010-face-mask: "\f109";
+$font-Flaticon-011-emergency-call: "\f10a";
+$font-Flaticon-012-bottle: "\f10b";
+$font-Flaticon-013-heart: "\f10c";
+$font-Flaticon-014-bowl: "\f10d";
+$font-Flaticon-015-crutch: "\f10e";
+$font-Flaticon-016-hand-sanitizer: "\f10f";
+$font-Flaticon-017-tooth: "\f110";
+$font-Flaticon-018-hospital: "\f111";
+$font-Flaticon-019-emergency-call: "\f112";
+$font-Flaticon-020-calendar: "\f113";
+$font-Flaticon-021-home: "\f114";
+$font-Flaticon-022-folder: "\f115";
+$font-Flaticon-023-pregnancy-test: "\f116";
+$font-Flaticon-024-stethoscope: "\f117";
+$font-Flaticon-025-health-report: "\f118";
+$font-Flaticon-026-briefcase: "\f119";
+$font-Flaticon-027-tablet: "\f11a";
+$font-Flaticon-028-map-point: "\f11b";
+$font-Flaticon-029-crutches: "\f11c";
+$font-Flaticon-030-injection: "\f11d";
+$font-Flaticon-031-dna: "\f11e";
+$font-Flaticon-032-brain: "\f11f";
+$font-Flaticon-033-lungs: "\f120";
+$font-Flaticon-034-eye-ball: "\f121";
+$font-Flaticon-035-virus: "\f122";
+$font-Flaticon-036-pills: "\f123";
+$font-Flaticon-037-bone: "\f124";
+$font-Flaticon-038-test-tube: "\f125";
+$font-Flaticon-039-vaccine: "\f126";
+$font-Flaticon-040-wheelchair: "\f127";
+$font-Flaticon-041-female: "\f128";
+$font-Flaticon-042-medical-insurance: "\f129";
+$font-Flaticon-043-medical-book: "\f12a";
+$font-Flaticon-044-tent: "\f12b";
+$font-Flaticon-045-man: "\f12c";

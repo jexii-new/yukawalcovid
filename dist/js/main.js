@@ -163,11 +163,10 @@ fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
   let isidirawatErr = document.querySelector('#isidirawat');
   let isimeninggalErr = document.querySelector('#isimeninggal');
   // alert(error);
-  isikonfirmErr.innerHTML = `<h5 style="color:#000" >Total Positif</h5><p>data error</p>`;
-  isisembuhErr.innerHTML = `<h5 style="color:#000">Total Sembuh</h5><p>data error</p>`;
-  isidirawatErr.innerHTML = `<h5 style="color:#000">Total Di Rawat</h5><p>data error</p>`;
-  isimeninggalErr.innerHTML = `<h5 style="colnpm run deploy
-  or:#000">Total Meninggal</h5><p>data error</p>`
+  isikonfirmErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`;
+  isisembuhErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`;
+  isidirawatErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`;
+  isimeninggalErr.innerHTML = `<p class="text-dark" style="font-size:10px;">Tidak ada koneksi!<5p>`
 });
 
 
@@ -184,7 +183,13 @@ $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian', func
         $('#update').html(`${update[panjang].tanggal.substr(0,10)}`);
     },1000);
 
-});
+}).catch(error => {
+  $('#positifperhari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`);
+  $('#sembuhperhari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`) ;
+  $('#meninggalperhari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`) ;
+  $('#rawatPerHari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`) ;
+  $('#update').html(`${update[panjang].tanggal.substr(0,10)}`);
+})
 
 
 $.getJSON('//apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi', function(data){
@@ -277,9 +282,9 @@ fetch('https://cekdiri.id/vaksinasi/')
         <h3 style="color:#F4A261;">${set_titik(coba[panjang].tahapan_vaksinasi.sdm_kesehatan.sudah_vaksin2)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
-          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.sdm_kesehatan_vaksinasi2}; background-color:#F4A261;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.sdm_kesehatan_vaksinasi2}</div>
+          <div class="progress-bar" role="progressbar" style="width:  ${ coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 }; background-color:#F4A261;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">  ${ coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 }</div>
         </div>
-        <p>${coba[panjang].cakupan.sdm_kesehatan_vaksinasi2} dari ${set_titik(coba[panjang].sasaran_vaksinasi_sdmk)}  telah divaksin</p>
+        <p>${ coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 } dari ${set_titik(coba[panjang].sasaran_vaksinasi_sdmk)}  telah divaksin</p>
       </div>
   </div>
     `
@@ -339,7 +344,7 @@ fetch('https://cekdiri.id/vaksinasi/')
     
     ).catch(err => {
       let vaksinErr = document.querySelector('#vaksin1');
-      vaksinErr.innerHTML = `<p class="text-left">Mohon maaf data sedang tidak bisa di akses.</p>`
+      vaksinErr.innerHTML = `<p class="text-left">Tidak ada koneksi!</p>`
       $})
 
 // api berita
