@@ -234,7 +234,7 @@ section.loader {
 
 /* button to top */
 #topBtn {
-  bottom: 70px;
+  bottom: 85px;
   position: fixed;
   right: 15px;
   font-size: 22px;
@@ -776,7 +776,7 @@ section.vaksin p {
   }
   /* button to top */
   #topBtn {
-    bottom: 70px;
+    bottom: 85px;
     position: fixed;
     right: 15px;
     font-size: 22px;
