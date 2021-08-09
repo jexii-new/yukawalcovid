@@ -117,7 +117,7 @@ $(document).ready(function(){
 })
 
 
-fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
+fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
 .then(response => 
   {
     if(!response.ok){
@@ -132,12 +132,11 @@ fetch('https://covid19.mathdro.id/api/countries/indonesia/confirmed')
   let isisembuh = document.querySelector('#isisembuh');
   let isidirawat = document.querySelector('#isidirawat');
   let isimeninggal = document.querySelector('#isimeninggal');
-
   setTimeout(() => {
-    isikonfirm.innerHTML = `<h5 style="color:#000" >Total Positif</h5><p>${set_titik((dataIndo.confirmed))}</p>`;
-    isisembuh.innerHTML = `<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(dataIndo.recovered)}</p>`;
-    isidirawat.innerHTML = `<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(dataIndo.active)}</p>`;
-    isimeninggal.innerHTML = `<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(dataIndo.deaths)}</p>`
+    isikonfirm.innerHTML = `<h5 style="color:#000" >Total Positif</h5><p>${set_titik((data.positif))}</p>`;
+    isisembuh.innerHTML = `<h5 style="color:#000">Total Sembuh</h5><p>${set_titik(data.sembuh)}</p>`;
+    isidirawat.innerHTML = `<h5 style="color:#000">Total Di Rawat</h5><p>${set_titik(data.dirawat)}</p>`;
+    isimeninggal.innerHTML = `<h5 style="color:#000">Total Meninggal</h5><p>${set_titik(data.meninggal)}</p>`
     
   },1000)
 }).catch((error) => {
