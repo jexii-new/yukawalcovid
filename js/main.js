@@ -257,6 +257,7 @@ fetch('https://cekdiri.id/vaksinasi/')
       </div>
   </div>
     `
+ 
     
     vaksintenagakes2.innerHTML = `
     <div class="card  ">
@@ -265,9 +266,9 @@ fetch('https://cekdiri.id/vaksinasi/')
         <h3 style="color:#F4A261;">${set_titik(coba[panjang].tahapan_vaksinasi.sdm_kesehatan.sudah_vaksin2)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
-          <div class="progress-bar" role="progressbar" style="width:  ${ coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 }; background-color:#F4A261;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">  ${ coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 }</div>
+          <div class="progress-bar" role="progressbar" style="width: ${ coba[panjang].tahapan_vaksinasi.sdm_kesehatan.sudah_vaksin2  > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 }; background-color:#F4A261;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">  ${ coba[panjang].tahapan_vaksinasi.sdm_kesehatan.sudah_vaksin2  > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 }</div>
         </div>
-        <p>${ coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 } dari ${set_titik(coba[panjang].sasaran_vaksinasi_sdmk)}  telah divaksin</p>
+        <p> ${ coba[panjang].tahapan_vaksinasi.sdm_kesehatan.sudah_vaksin2  > coba[panjang].sasaran_vaksinasi_sdmk ? '100%' : coba[panjang].cakupan.sdm_kesehatan_vaksinasi2 } dari ${set_titik(coba[panjang].sasaran_vaksinasi_sdmk)}  telah divaksin</p>
       </div>
   </div>
     `
