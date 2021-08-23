@@ -481,6 +481,11 @@ section.vaksin p {
   background-image: url(../img/011-emergency\ call.svg);
   filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
+#sasarantotalvaksin2 h3, #sasarantotalvaksin1 h3{
+  color: #219653 !important;
+  text-align: center !important;
+
+}
 @media (min-width: 768px) {
   .navbar {
     font-size: 16px;
@@ -515,6 +520,11 @@ section.vaksin p {
   .tbcolor td {
     background-color: #4a4e69 !important;
     color: white !important;
+  }
+  #sasarantotalvaksin2 h3, #sasarantotalvaksin1 h3{
+    color: #219653 !important;
+    text-align: center !important;
+
   }
 }
 
@@ -732,6 +742,11 @@ section.vaksin p {
     margin-top: 90px !important;
     margin-bottom: 100px;
   }
+  #sasarantotalvaksin2 h3, #sasarantotalvaksin1 h3{
+    color: #219653 !important;
+    text-align: center !important;
+
+  }
   section.vaksin #updatetvaksin p {
     font-size: 14px !important;
   }
@@ -756,6 +771,7 @@ section.vaksin p {
   section.vaksin .progress-bar {
     background-color: #a51363;
   }
+  
   section.vaksin h6 {
     text-align: right;
     margin-top: -5px;

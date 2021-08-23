@@ -217,7 +217,30 @@ fetch('https://cekdiri.id/vaksinasi/')
     let vaksinpetugaspub2 = document.querySelector('#vaksinpetugaspub2');
     let vaksinlansia1 = document.querySelector('#vaksinlansia1');
     let vaksinlansia2 = document.querySelector('#vaksinlansia2');
-    let updatevaksin = document.querySelector('#updatevaksin'); 
+    let updatevaksassin = document.querySelector('#updatevaksin'); 
+    let sasaranvaksin1 = document.querySelector('#sasarantotalvaksin1'); 
+    let sasaranvaksin2 = document.querySelector('#sasarantotalvaksin2'); 
+
+    sasaranvaksin1.innerHTML= `
+    <div class="card  ">
+    <div class="card-body  card-case" >
+      <h5 class="card-title text-uppercase mb-3">Sasaran Vaksinasi Dosis 1</h5>
+        <h3>${set_titik(coba[panjang].total_sasaran_vaksinasi)} </h3>
+   
+  
+      </div>
+  </div>
+    `
+    sasaranvaksin2.innerHTML= `
+    <div class="card  ">
+        <div class="card-body  card-case" >
+          <h5 class="card-title text-uppercase mb-3">Sasaran Vaksinasi Dosis 2</h5>
+            <h3>${set_titik(coba[panjang].total_sasaran_vaksinasi)} </h3>
+       
+      
+          </div>
+      </div>
+    `
     vaksin1.innerHTML= `
     <div class="card  ">
         <div class="card-body  card-case" >
