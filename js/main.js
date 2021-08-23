@@ -146,10 +146,10 @@ fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
   let isidirawatErr = document.querySelector('#isidirawat');
   let isimeninggalErr = document.querySelector('#isimeninggal');
   // alert(error);
-  isikonfirmErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`;
-  isisembuhErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`;
-  isidirawatErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`;
-  isimeninggalErr.innerHTML = `<p class="text-dark" style="font-size:10px;">Tidak ada koneksi!<5p>`
+  isikonfirmErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Mohon maaf data sedang tidak bisa di akses!</p>`;
+  isisembuhErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Mohon maaf data sedang tidak bisa di akses!</p>`;
+  isidirawatErr.innerHTML = `<p class="text-dark" style="font-size:15px;">Mohon maaf data sedang tidak bisa di akses!</p>`;
+  isimeninggalErr.innerHTML = `<p class="text-dark" style="font-size:10px;">Mohon maaf data sedang tidak bisa di akses!<5p>`
 });
 
 
@@ -167,10 +167,10 @@ $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian', func
     },1000);
 
 }).catch(error => {
-  $('#positifperhari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`);
-  $('#sembuhperhari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`) ;
-  $('#meninggalperhari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`) ;
-  $('#rawatPerHari').html(`<p class="text-dark" style="font-size:15px;">Tidak ada koneksi!</p>`) ;
+  $('#positifperhari').html(`<p class="text-dark" style="font-size:15px;">Mohon maaf data sedang tidak bisa di akses!</p>`);
+  $('#sembuhperhari').html(`<p class="text-dark" style="font-size:15px;">Mohon maaf data sedang tidak bisa di akses!</p>`) ;
+  $('#meninggalperhari').html(`<p class="text-dark" style="font-size:15px;">Mohon maaf data sedang tidak bisa di akses!</p>`) ;
+  $('#rawatPerHari').html(`<p class="text-dark" style="font-size:15px;">Mohon maaf data sedang tidak bisa di akses!</p>`) ;
   $('#update').html(`${update[panjang].tanggal.substr(0,10)}`);
 })
 
@@ -292,9 +292,9 @@ fetch('https://cekdiri.id/vaksinasi/')
         <h3 style="color:#2A9D8F;">${set_titik(coba[panjang].tahapan_vaksinasi.petugas_publik.sudah_vaksin2)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
-          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.petugas_publik_vaksinasi2}; background-color:#2A9D8F;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.petugas_publik_vaksinasi2}</div>
+          <div class="progress-bar" role="progressbar" style="width:100%; background-color:#2A9D8F;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
         </div>
-        <p>${coba[panjang].cakupan.petugas_publik_vaksinasi2} dari ${set_titik(coba[panjang].sasaran_vaksinasi_petugas_publik)}  telah divaksin</p>
+        <p>100% dari ${set_titik(coba[panjang].sasaran_vaksinasi_petugas_publik)}  telah divaksin</p>
       </div>
   </div>
     `
@@ -328,7 +328,7 @@ fetch('https://cekdiri.id/vaksinasi/')
     
     ).catch(err => {
       let vaksinErr = document.querySelector('#vaksin1');
-      vaksinErr.innerHTML = `<p class="text-left">Tidak ada koneksi!</p>`
+      vaksinErr.innerHTML = `<p class="text-left">Mohon maaf data sedang tidak bisa di akses!</p>`
       $})
 
 // api berita
