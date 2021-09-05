@@ -354,7 +354,7 @@ let kelompokremaja2 =  document.querySelector('#remaja2');
     masyarakatUmum1.innerHTML= `
     <div class="card  ">
     <div class="card-body  card-case" >
-      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum dosis 1</h5>
         <h3 style="color:#FF0080;">${set_titik(coba[panjang].tahapan_vaksinasi.masyarakat_umum.total_vaksinasi1)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
@@ -367,7 +367,7 @@ let kelompokremaja2 =  document.querySelector('#remaja2');
     masyarakatUmum2.innerHTML= `
     <div class="card  ">
     <div class="card-body  card-case" >
-      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum dosis 2</h5>
         <h3 style="color:#FF0080;">${set_titik(coba[panjang].tahapan_vaksinasi.masyarakat_umum.total_vaksinasi2)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
@@ -380,7 +380,7 @@ let kelompokremaja2 =  document.querySelector('#remaja2');
     kelompokremaja1.innerHTML= `
     <div class="card  ">
     <div class="card-body  card-case" >
-      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Usia 12-17 dosis 1</h5>
         <h3 style="color:#F81CE5;">${set_titik(coba[panjang].tahapan_vaksinasi.kelompok_usia_12_17.total_vaksinasi1)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
@@ -393,7 +393,7 @@ let kelompokremaja2 =  document.querySelector('#remaja2');
     kelompokremaja2.innerHTML= `
     <div class="card  ">
     <div class="card-body  card-case" >
-      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Usia 12-17 dosis 2</h5>
         <h3 style="color:#F81CE5;">${set_titik(coba[panjang].tahapan_vaksinasi.kelompok_usia_12_17.total_vaksinasi2)} </h3>
         <h6>Dosis telah diberikan</h6>
         <div class="progress" style="height: 30px;">
