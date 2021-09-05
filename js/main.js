@@ -220,6 +220,10 @@ fetch('https://cekdiri.id/vaksinasi/')
     let updatevaksassin = document.querySelector('#updatevaksin'); 
     let sasaranvaksin1 = document.querySelector('#sasarantotalvaksin1'); 
     let sasaranvaksin2 = document.querySelector('#sasarantotalvaksin2'); 
+let masyarakatUmum1 =  document.querySelector('#masyarakat1'); 
+let masyarakatUmum2 =  document.querySelector('#masyarakat2'); 
+let kelompokremaja1 =  document.querySelector('#remaja1'); 
+let kelompokremaja2 =  document.querySelector('#remaja2'); 
 
     sasaranvaksin1.innerHTML= `
     <div class="card  ">
@@ -344,6 +348,58 @@ fetch('https://cekdiri.id/vaksinasi/')
           <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.lansia_vaksinasi2}; background-color:#77acf1;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.lansia_vaksinasi2}</div>
         </div>
         <p>${coba[panjang].cakupan.lansia_vaksinasi2} dari ${set_titik(coba[panjang].sasaran_vaksinasi_lansia)}  telah divaksin</p>
+      </div>
+  </div>
+    `
+    masyarakatUmum1.innerHTML= `
+    <div class="card  ">
+    <div class="card-body  card-case" >
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+        <h3 style="color:#FF0080;">${set_titik(coba[panjang].tahapan_vaksinasi.masyarakat_umum.total_vaksinasi1)} </h3>
+        <h6>Dosis telah diberikan</h6>
+        <div class="progress" style="height: 30px;">
+          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.masyarakat_umum_vaksinasi1}; background-color:#FF0080;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.masyarakat_umum_vaksinasi1}</div>
+        </div>
+        <p>${coba[panjang].cakupan.masyarakat_umum_vaksinasi1} dari ${set_titik(coba[panjang].sasaran_vaksinasi_masyarakat_umum)}  telah divaksin</p>
+      </div>
+  </div>
+    `
+    masyarakatUmum2.innerHTML= `
+    <div class="card  ">
+    <div class="card-body  card-case" >
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+        <h3 style="color:#FF0080;">${set_titik(coba[panjang].tahapan_vaksinasi.masyarakat_umum.total_vaksinasi2)} </h3>
+        <h6>Dosis telah diberikan</h6>
+        <div class="progress" style="height: 30px;">
+          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.masyarakat_umum_vaksinasi2}; background-color:#FF0080;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.masyarakat_umum_vaksinasi2}</div>
+        </div>
+        <p>${coba[panjang].cakupan.masyarakat_umum_vaksinasi2} dari ${set_titik(coba[panjang].sasaran_vaksinasi_masyarakat_umum)}  telah divaksin</p>
+      </div>
+  </div>
+    `
+    kelompokremaja1.innerHTML= `
+    <div class="card  ">
+    <div class="card-body  card-case" >
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+        <h3 style="color:#F81CE5;">${set_titik(coba[panjang].tahapan_vaksinasi.kelompok_usia_12_17.total_vaksinasi1)} </h3>
+        <h6>Dosis telah diberikan</h6>
+        <div class="progress" style="height: 30px;">
+          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.kelompok_usia_12_17_vaksinasi1}; background-color:#F81CE5;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.kelompok_usia_12_17_vaksinasi1}</div>
+        </div>
+        <p>${coba[panjang].cakupan.kelompok_usia_12_17_vaksinasi1} dari ${set_titik(coba[panjang].sasaran_vaksinasi_kelompok_1217)}  telah divaksin</p>
+      </div>
+  </div>
+    `
+    kelompokremaja2.innerHTML= `
+    <div class="card  ">
+    <div class="card-body  card-case" >
+      <h5 class="card-title text-uppercase mb-3">Vaksinasi Masyarakat Umum 1</h5>
+        <h3 style="color:#F81CE5;">${set_titik(coba[panjang].tahapan_vaksinasi.kelompok_usia_12_17.total_vaksinasi2)} </h3>
+        <h6>Dosis telah diberikan</h6>
+        <div class="progress" style="height: 30px;">
+          <div class="progress-bar" role="progressbar" style="width:${coba[panjang].cakupan.kelompok_usia_12_17_vaksinasi2}; background-color:#F81CE5;;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">${coba[panjang].cakupan.kelompok_usia_12_17_vaksinasi2}</div>
+        </div>
+        <p>${coba[panjang].cakupan.kelompok_usia_12_17_vaksinasi2} dari ${set_titik(coba[panjang].sasaran_vaksinasi_kelompok_1217)}  telah divaksin</p>
       </div>
   </div>
     `
